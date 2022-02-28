@@ -8,60 +8,73 @@ export const messageSlice = createSlice({
         message: [
             {
                 id: "1234",
-                sender: "1",
-                receiver: "123",
+                source: "1",
+                destination: "123",
                 content: "lorem ipsum",
+                time: 1646037825
             },
             {
                 id: "1235",
-                sender: "123",
-                receiver: "1",
+                source: "123",
+                destination: "1",
                 content: "Hello",
+                time: 1646037836
             },
             {
                 id: "1234",
-                sender: "1",
-                receiver: "123",
+                source: "1",
+                destination: "123",
                 content: "lorem ipsum",
+                time: 1646037846
             },
             {
                 id: "1235",
-                sender: "123",
-                receiver: "1",
+                source: "123",
+                destination: "1",
                 content: "Hello",
+                time: 1646037946
             },
             {
                 id: "1234",
-                sender: "1",
-                receiver: "123",
+                source: "1",
+                destination: "123",
                 content: "lorem ipsum",
+                time: 1646037956
             },
             {
                 id: "1235",
-                sender: "123",
-                receiver: "1",
+                source: "123",
+                destination: "1",
                 content: "Hello",
+                time: 1646038256
             },
             {
                 id: "1234",
-                sender: "1",
-                receiver: "123",
+                source: "1",
+                destination: "123",
                 content: "lorem ipsum",
+                time: 1646037822
             },
             {
                 id: "1235",
-                sender: "123",
-                receiver: "1",
+                source: "123",
+                destination: "1",
                 content: "Hello",
+                time: 1646039003
             },
-
+            {
+                id: "1236",
+                source: "1",
+                destination: "123",
+                content: "banj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif vbanj teen gif v",
+                time: 1646039003
+            }
         ],
         choosing: "",
         offline: false | 3,
     },
     reducers: {
         choose: (state, action) => {
-            console.log(action.payload);
             return {
                 ...state,
                 choosing: action.payload.id,
@@ -69,10 +82,19 @@ export const messageSlice = createSlice({
                 avatar: action.payload.avatar,
                 offline: action.payload.offline
             }
+        },
+        sendMessage: (state, action) => {
+            return {
+                ...state,
+                message: [
+                    ...state.message,
+                    action.payload
+                ]
+            }
         }
 
     }
 });
 
-export const { choose } = messageSlice.actions;
+export const { choose, sendMessage } = messageSlice.actions;
 export default messageSlice.reducer;

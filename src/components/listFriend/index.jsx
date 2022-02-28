@@ -32,9 +32,21 @@ export default function ListFriend() {
         })
         setList(x);
     }
+    const onSearchFocus = (event)=>{
+        const searchBar = document.getElementById("searchBar");
+        const friendAndGroup = document.getElementById("friendAndGroup");
+        searchBar.classList.add("w-full");
+        friendAndGroup.classList.add("hidden");
+    }
+    const onSearchBlur = ()=>{
+        const searchBar = document.getElementById("searchBar");
+        const friendAndGroup = document.getElementById("friendAndGroup");
+        searchBar.classList.remove("w-full");
+        friendAndGroup.classList.remove("hidden");
+    }
     return (
-        <div className="mx-4 p-4 rounded-3xl bg-gray-600 opacity-90">
-            <SearchBar handleSearch={onSearch}/>
+        <div className="border border-black p-4 bg-gray-600 opacity-90 w-3/12">
+            <SearchBar handleSearch={onSearch} onSearchFocus={onSearchFocus} onSearchBlur={onSearchBlur} />
             <div id="friend"className="overflow-y-auto rounded-3xl" style={{
                 height: "calc(100vh - 10rem)"
             }}>

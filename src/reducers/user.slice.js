@@ -9,7 +9,7 @@ const initState = {
             id: 1,
             name: "Buji khalifa",
             avatar: "https://picsum.photos/200",
-            offline: 3,
+            offline: false,
         },
         {
             id: 2,

@@ -14,3 +14,42 @@
 textarea{
   resize: none;
 }
+*::-webkit-scrollbar{
+  width: .8rem;
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-track{
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb{
+  border-radius: 100px;
+  /* border: 6px solid rgba(0, 0, 0, 0.18); */
+  border-left: 0;
+  border-right: 0;
+  background-color: rgb(161, 159, 159);
+}
+.test:after{
+  content: "";
+  display: block;
+  clear: both;
+  width: 1rem;
+  height: 1rem;
+  background-color: #000;
+  position: absolute;
+  border-radius: 100%;
+  bottom: .3rem;
+  right: .5rem;
+  
+}
+.online:after{
+  background-color: green;
+}
+.offline:after{
+  background-color: red;
+}
+div#input:empty:before {
+  content:attr(data-placeholder);
+  color:gray
+}

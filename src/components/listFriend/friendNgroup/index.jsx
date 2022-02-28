@@ -4,7 +4,7 @@ import {AiOutlineUsergroupAdd} from "react-icons/ai"
 
 export default function FriendAndGroup() {
   return (
-    <div className="mx-4 flex items-center gap-x-4">
+    <div id="friendAndGroup" className="mr-auto ml-2 flex items-center gap-x-4">
       <button className="hover:bg-gray-700 hover:text-white rounded-md ">
         <IoPersonAddSharp size="2rem"/>
       </button>

@@ -4,7 +4,7 @@ import { ListFriend, Main, LeftBar } from "./components"
 
 function App() {
   return (
-    <div className="flex p-2 min-h-screen	">
+    <div className="flex p min-h-screen	">
       <LeftBar />
       <ListFriend />
       <Main />

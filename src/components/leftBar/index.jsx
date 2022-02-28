@@ -12,10 +12,10 @@ export default function LeftBar() {
         event.currentTarget.classList.add("fn-active");
     }
   return (
-    <div className="w-32 border-2 border-red-300 mr-4 flex flex-col items-center py-4 justify-between" >
+    <div className="border border-black flex flex-col items-center py-4 justify-between " >
         <div className="w-full flex flex-col items-center gap-y-4">
-        <img title={user.username} src={user.avatar} className="w-20 h-20 rounded-full"/>
-        <button title="Tin nhan" onClick={handleClick} className="hover:text-white hover:bg-gray-700 w-full fn">
+        <img title={user.username} src={user.avatar} className="w-20 h-20 rounded-full mx-4"/>
+        <button title="Tin nhan" onClick={handleClick} className="hover:text-white hover:bg-gray-700 w-full fn fn-active">
             <HiOutlineChatAlt size="2rem" className="mx-auto"/>
                 <span className="ml-2">Tin nhắn</span>
         </button>
