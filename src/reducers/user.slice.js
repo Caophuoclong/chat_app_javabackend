@@ -1,14 +1,70 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 const initState = {
-    username: "",
-    avatar: "",
+    id: "123",
+    username: "Phuoc Long",
+    avatar: "https://picsum.photos/200",
     listFriends: [
         {
+            id: 1,
             name: "Buji khalifa",
             avatar: "https://picsum.photos/200",
             offline: 3,
-        }
+        },
+        {
+            id: 2,
+            name: "Man",
+            avatar: "https://picsum.photos/200",
+            offline: 3,
+        },
+        {
+            id: 3,
+            name: "Long",
+            avatar: "https://picsum.photos/200",
+            offline: 3,
+        },
+        {
+            id: 4,
+            name: "KKKK",
+            avatar: "https://picsum.photos/200",
+            offline: 3,
+        },
+        {
+            id: 5,
+            name: "khung",
+            avatar: "https://picsum.photos/200",
+            offline: 3,
+        }, {
+            id: 6,
+            name: "cusfas",
+            avatar: "https://picsum.photos/200",
+            offline: 3,
+        }, {
+            id: 7,
+            name: "Ukraina",
+            avatar: "https://picsum.photos/200",
+            offline: 3,
+        }, {
+            id: 8,
+            name: "Nga",
+            avatar: "https://picsum.photos/200",
+            offline: 3,
+        }, {
+            id: 9,
+            name: "USA",
+            avatar: "https://picsum.photos/200",
+            offline: 3,
+        }, {
+            id: 10,
+            name: "GER",
+            avatar: "https://picsum.photos/200",
+            offline: 3,
+        }, {
+            id: 11,
+            name: "Paskitan",
+            avatar: "https://picsum.photos/200",
+            offline: 3,
+        },
     ],
 
 }
