@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit"
-import userReducer from "./reducers/user.slice"
-import messageReducer from "./reducers/message.slice"
+import userReducer from "./slices/user.slice"
+import messageReducer from "./slices/message.slice"
 export default configureStore({
     reducer: {
         user: userReducer,

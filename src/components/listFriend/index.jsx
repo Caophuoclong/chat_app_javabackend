@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { choose } from '../../reducers/message.slice';
+import { choose } from '../../slices/message.slice';
 import Friend from './friend';
 import SearchBar from './searchBar'
 

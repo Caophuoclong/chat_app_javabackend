@@ -53,3 +53,7 @@ div#input:empty:before {
   content:attr(data-placeholder);
   color:gray
 }
+p.small{
+  font-size: 70%;
+  text-align: left
+}
